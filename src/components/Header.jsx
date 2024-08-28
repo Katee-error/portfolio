@@ -9,7 +9,10 @@ const Header = () => {
       <Container maxW={"container.lg"}>
         <Flex alignItems={"center"} justifyContent={"space-between"}>
           <Box>
-            <Heading color={'white'} fontWeight={900}> 404</Heading>
+            <Heading color={"white"} fontWeight={900}>
+              {" "}
+              404
+            </Heading>
           </Box>
           <Flex
             color={"brand.nav"}
@@ -43,12 +46,15 @@ const Header = () => {
                 Contact
               </Link>
             </NavLink>
-            <MotionButton
-              p={"20px"}
+
+            <Link
+              href="/resume_Ekaterina_Erokhina.pdf"
+              isExternal
+              p={"10px 20px"}
               borderRadius={"10px"}
               fontSize={"14px"}
               fontWeight={400}
-              border={"1px solid #FA9601"}
+              border={"1px solid #34d585"}
               bg={"transparent"}
               color={"brand.main"}
               // bg={"#C7323D"}
@@ -61,7 +67,7 @@ const Header = () => {
               // color={"#C7323D"}
             >
               Resume
-            </MotionButton>
+            </Link>
           </Flex>
         </Flex>
       </Container>

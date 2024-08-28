@@ -2,13 +2,14 @@ import { extendTheme } from "@chakra-ui/react";
 
 const customTheme = extendTheme({
   fonts: {
-    body: `"Roboto", sans-serif`,
+    body: `"IBM Plex Mono", monospace`,
   },
   colors: {
     brand: {
-      'main': "#FA9601", 
+      'main': "#34d585", 
       'bg': "#121926",
      'nav': '#b5bbc4',
+     'text': '#b5bbc4',
       200: "#F7931A", //orange
       300: "#FFFFFF", // white
       400: "#474A67", //text

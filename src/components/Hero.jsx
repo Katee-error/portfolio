@@ -1,16 +1,26 @@
-import React from 'react'
-import { Box, Container, Heading } from '@chakra-ui/react'
+import React from "react";
+import { Box, Container, Heading, Text } from "@chakra-ui/react";
 
 const Hero = () => {
   return (
-    <Box py={'120px'}>
-        <Container maxW={'container.lg'}>
-            <Heading color={'white'} fontSize={'60px'} fontWeight={600}>
-                Erokhina Ekaterina
-            </Heading>
-        </Container>
+    <Box py={"120px"} id="about">
+      <Container maxW={"container.lg"}>
+        <Text color={"brand.main"} fontSize={"14px"}>
+          Hello, my name is
+        </Text>
+        <Heading color={"brand.text"} fontSize={"80px"} fontWeight={500}>
+          Erokhina Ekaterina
+        </Heading>
+        <Text color={'brand.text'} maxW={'70%'} mt={'20px'} fontWeight={300}>
+          Frontend developer with 1 year of commercial development experience.
+          Specializing in creating dynamic and responsive web applications using
+          React, TypeScript, Redux, and modern frontend development tools.
+          Studied UX-UI Design and actively apply the acquired knowledge in
+          developing user-friendly web application interfaces.
+        </Text>
+      </Container>
     </Box>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
