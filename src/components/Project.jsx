@@ -28,7 +28,7 @@ const Project = () => {
           <Flex justifyContent={"space-between"} gap={"50px"} alignItems={'start'} flexDir={{base: 'column', md: 'row'}}>
             <MotionImage
               src={monocureImg}
-              opacity={"40%"}
+              opacity={{base: '100%',md:"40%"}}
               borderRadius={"10px"}
               whileHover={{ scale: 1.05, opacity: "90%" }}
               objectFit={"contain"}
@@ -174,7 +174,7 @@ const Project = () => {
             </VStack>{" "}
             <MotionImage
               src={clinicalImg}
-              opacity={"40%"}
+              opacity={{base: '100%',md:"40%"}}
               borderRadius={"10px"}
               whileHover={{ scale: 1.05, opacity: "90%" }}
               objectFit={"contain"}
@@ -185,7 +185,7 @@ const Project = () => {
           <Flex justifyContent={"space-between"} gap={"50px"} alignItems={'start'} flexDir={{base: 'column', md: 'row'}}>
             <MotionImage
               src={shopImg}
-              opacity={"40%"}
+              opacity={{base: '100%',md:"40%"}}
               borderRadius={"10px"}
               whileHover={{ scale: 1.05, opacity: "90%" }}
               objectFit={"contain"}
