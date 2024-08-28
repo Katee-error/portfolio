@@ -21,19 +21,18 @@ import { RiExternalLinkLine } from "react-icons/ri";
 
 const Project = () => {
   const MotionImage = motion(Image);
-  const MotionCard = motion(Card);
   return (
     <Box py={"60px"}>
       <Container maxW={"container.lg"}>
-        <VStack gap={"170px"}>
-          <Flex justifyContent={"space-between"} gap={"50px"} alignItems={'start'}>
+        <VStack gap={{base:'100px',md:"170px"}}>
+          <Flex justifyContent={"space-between"} gap={"50px"} alignItems={'start'} flexDir={{base: 'column', md: 'row'}}>
             <MotionImage
               src={monocureImg}
               opacity={"40%"}
               borderRadius={"10px"}
               whileHover={{ scale: 1.05, opacity: "90%" }}
               objectFit={"contain"}
-              w={"50%"}
+              w={{base:'100%',md:"50%"}}
               h={"auto"}
             />
             <VStack gap={"20px"} alignItems={"start"}>
@@ -67,7 +66,8 @@ const Project = () => {
               <Flex
                 color={"brand.text"}
                 alignItems={"center"}
-                gap={"20px"}
+                gap={'20px'}
+                fontSize={{base: '12px', md: '16px'}}
                 fontWeight={300}
               >
                 <Text _hover={{ color: "brand.main" }}>React</Text>
@@ -105,8 +105,8 @@ const Project = () => {
               </Flex>
             </VStack>
           </Flex>
-          <Flex justifyContent={"space-between"} gap={"50px"} alignItems={'start'}>
-            <VStack gap={"20px"} alignItems={"start"}>
+          <Flex justifyContent={"space-between"} gap={"50px"} alignItems={'start'} flexDir={{base: "column-reverse", md: 'row'}} >
+            <VStack gap={"20px"} alignItems={"start"} >
               <Card
                 maxW="lg"
                 bgColor={"#242d3d"}
@@ -136,6 +136,7 @@ const Project = () => {
                 alignItems={"center"}
                 gap={"20px"}
                 fontWeight={300}
+                fontSize={{base: '12px', md: '16px'}}
               >
                 <Text _hover={{ color: "brand.main" }}>React</Text>
 
@@ -177,18 +178,18 @@ const Project = () => {
               borderRadius={"10px"}
               whileHover={{ scale: 1.05, opacity: "90%" }}
               objectFit={"contain"}
-              w={"50%"}
+              w={{base:'100%',md:"50%"}}
               h={"auto"}
             />
           </Flex>
-          <Flex justifyContent={"space-between"} gap={"50px"} alignItems={'start'}>
+          <Flex justifyContent={"space-between"} gap={"50px"} alignItems={'start'} flexDir={{base: 'column', md: 'row'}}>
             <MotionImage
               src={shopImg}
               opacity={"40%"}
               borderRadius={"10px"}
               whileHover={{ scale: 1.05, opacity: "90%" }}
               objectFit={"contain"}
-              w={"50%"}
+              w={{base:'100%',md:"50%"}}
               h={"auto"}
             />
             <VStack gap={"20px"} alignItems={"start"}>
@@ -223,6 +224,7 @@ const Project = () => {
                 alignItems={"center"}
                 gap={"20px"}
                 fontWeight={300}
+                fontSize={{base: '12px', md: '16px'}}
               >
                 <Text _hover={{ color: "brand.main" }}>React</Text>
                 <Text _hover={{ color: "brand.main" }}>Firebase</Text>

@@ -8,6 +8,7 @@ const Layout = () => {
   return (
     <Flex flexDirection={"column"} minH={"100vh"} bgColor={"brand.bg"}>
       { <Box
+      display={{base: 'none', md: 'block'}}
         position="fixed"
         top="50%"
         right="40px"

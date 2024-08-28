@@ -11,7 +11,7 @@ const Hero = () => {
         <Heading color={"brand.text"} fontSize={"80px"} fontWeight={500}>
           Erokhina Ekaterina
         </Heading>
-        <Text color={'brand.text'} maxW={'70%'} mt={'20px'} fontWeight={300}>
+        <Text color={'brand.text'} maxW={{base: '100%',md:'70%'}} mt={'20px'} fontWeight={300}>
           Frontend developer with 1 year of commercial development experience.
           Specializing in creating dynamic and responsive web applications using
           React, TypeScript, Redux, and modern frontend development tools.

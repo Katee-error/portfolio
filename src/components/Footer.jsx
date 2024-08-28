@@ -16,7 +16,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 const Footer = () => {
   return (
-    <Box py={"60px"}>
+    <Box py={"80px"}>
       <Container maxW={"container.lg"}>
         <Divider h={"1px"} color={'brand.text'}/>
         <Flex
@@ -24,6 +24,8 @@ const Footer = () => {
           alignItems={"start"}
           justifyContent={"space-between"}
           mt={"40px"}
+          flexDirection={{base: 'column', md: 'row'}}
+          gap={{base: '20px'}}
         >
           <VStack alignItems={"start"}>
             <Link href="mailto:ekaterinaerokhina.work@protonmail.com">
